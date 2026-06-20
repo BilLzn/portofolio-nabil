@@ -5,11 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio | Muhammad Nabil Fauzan</title>
     
-    <script src="https://cdn.tailwindcss.com" defer></script>
+   <link rel="stylesheet" href="output.css">
     
     <link rel="stylesheet" href="style.css">
 
     <style>
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #0b0a1a; /* Warna gelap background web kamu */
+            z-index: 99999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+        }
+        .loading-spinner {
+            width: 45px;
+            height: 45px;
+            border: 3.5px solid rgba(225, 29, 72, 0.15);
+            border-top: 3.5px solid #e11d48; /* Warna merah Rose Tailwind */
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .preloader-hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
         @keyframes floatBlob1 {
             0% { transform: translate(0px, 0px) scale(1); }
             33% { transform: translate(120px, -120px) scale(1.2); }
@@ -30,6 +59,10 @@
     </style>
 </head>
 <body class="relative overflow-x-hidden antialiased bg-[#0b0a1a] text-white">
+
+    <div id="preloader">
+        <div class="loading-spinner"></div>
+    </div>
 
     <div class="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">
         <div class="absolute -top-[10%] -left-[10%] w-[65vw] h-[65vw] bg-blue-700/35 rounded-full blur-[140px] animate-blob-1 mix-blend-screen"></div>
@@ -494,5 +527,15 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                const preloader = document.getElementById('preloader');
+                if(preloader) {
+                    preloader.classList.add('preloader-hidden');
+                }
+            }, 300); // Layar loading akan memudar 0.3 detik setelah web siap
+        });
+    </script>
 </body>
 </html>

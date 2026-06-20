@@ -1,0 +1,4 @@
+node_modules/
+output.css
+tailwindcss.exe
+.DS_Store

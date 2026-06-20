@@ -1,0 +1,25 @@
+{
+  "name": "portofolio-nabil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BilLzn/portofolio-nabil.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BilLzn/portofolio-nabil/issues"
+  },
+  "homepage": "https://github.com/BilLzn/portofolio-nabil#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.1"
+  }
+}
