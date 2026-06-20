@@ -1,0 +1,26 @@
+/* Mengambil font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+/* Pengaturan dasar seluruh halaman */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0b0a1a; /* Warna dasar gelap banget */
+    color: white;
+}
+
+/* Animasi untuk Infinite Scroll Carousel */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+    /* 25s agar berjalannya lebih smooth dan santai */
+    animation: scroll 25s linear infinite; 
+    will-change: transform; /* Agar animasi tidak patah-patah di layar */
+}
+
+/* Scroll berhenti saat mouse diarahkan ke ikon */
+.animate-scroll:hover {
+    animation-play-state: paused;
+}
