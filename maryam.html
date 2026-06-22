@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryam Residence Study Case | Muhammad Nabil Fauzan</title>
+    <!-- Tetap panggil output.css untuk struktur dasar grid -->
+    <link rel="stylesheet" href="output.css">
+    
+    <!-- PENGAMAN TITANIUM NATIVE CSS (Bypass 100% Kompilasi Tailwind) -->
+    <style>
+        :root {
+            --forest-base: #016539;
+            --grass-vibrant: #8BC243;
+            --gold-accent: #EFAE00;
+            --bg-deep: #030705;
+            --card-surface: #08140F;
+            --text-pure-white: #FFFFFF;
+            --text-sage-bright: #C2D6CB;
+        }
+
+        body {
+            background-color: var(--bg-deep) !important;
+            color: var(--text-pure-white) !important;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0; padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Matriks Arsitektur Bebas Vibe AI */
+        .bg-technical-matrix {
+            background-color: var(--bg-deep);
+            background-image: 
+                linear-gradient(to right, rgba(1, 101, 57, 0.22) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(1, 101, 57, 0.22) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+
+        /* Garansi Kontras Paragraf */
+        .text-sage { color: var(--text-sage-bright) !important; line-height: 1.7; }
+        .text-vibrant { color: var(--grass-vibrant) !important; font-weight: 800; }
+
+        /* Garansi Tampilan Kartu Strategi */
+        .iron-card {
+            background-color: var(--card-surface) !important;
+            border: 1px solid var(--forest-base) !important;
+            border-radius: 1.75rem;
+            padding: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            box-sizing: border-box;
+        }
+
+        /* Scrollbar Premium */
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: var(--bg-deep); }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: var(--forest-base); border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: var(--grass-vibrant); }
+
+        /* NAVBAR ATAS ANTI-BADAI */
+        .iron-navbar {
+            position: fixed;
+            top: 1.5rem; left: 50%;
+            transform: translateX(-50%);
+            width: 90%; max-width: 56rem;
+            background-color: rgba(3, 7, 5, 0.95);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--grass-vibrant);
+            border-radius: 9999px;
+            padding: 0.75rem 1.5rem;
+            display: flex; align-items: center; justify-content: space-between;
+            z-index: 999999;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.8);
+            box-sizing: border-box;
+        }
+
+        /* PENGAMAN PANGGUNG: Membalik Logika agar Desktop Tampil Otomatis */
+        #desktopOrbitSection { display: block; width: 100%; height: 640px; position: relative; overflow: hidden; margin: 3rem 0; }
+        #mobileSwipeSection { display: none; width: 100%; max-width: 28rem; margin: 2rem auto; padding: 0 1rem; box-sizing: border-box; }
+
+        @media (max-width: 767px) {
+            #desktopOrbitSection { display: none !important; }
+            #mobileSwipeSection { display: block !important; }
+        }
+
+        /* KANDANG MUTLAK LOGO TENGAH */
+        .center-anchor {
+            position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 50;
+            display: flex; flex-direction: column; align-items: center;
+            cursor: pointer;
+        }
+        .center-circle {
+            width: 116px; height: 116px;
+            background-color: var(--bg-deep);
+            border: 2px solid var(--grass-vibrant);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 0 45px rgba(139, 194, 67, 0.35);
+            padding: 0.75rem; box-sizing: border-box;
+        }
+        .center-circle img {
+            width: 100% !important; height: 100% !important;
+            max-width: 86px !important; max-height: 86px !important;
+            object-fit: contain !important;
+        }
+    </style>
+</head>
+<body class="bg-technical-matrix select-none font-sans">
+
+    <!-- STICKY NAVBAR -->
+    <nav class="iron-navbar">
+        <a href="index.html#project" style="color: var(--text-pure-white); font-weight: 700; text-decoration: none; font-size: 14px; display: flex; align-items: center; gap: 6px;">
+            <span style="color: var(--grass-vibrant);">←</span> Kembali ke Portofolio
+        </a>
+        <div style="background-color: var(--card-surface); border: 1px solid var(--forest-base); padding: 4px 16px; border-radius: 999px; font-size: 12px; font-weight: 700; color: var(--text-sage-bright); display: flex; align-items: center; gap: 8px;">
+            <span style="width: 8px; height: 8px; background-color: var(--grass-vibrant); border-radius: 50%;"></span>
+            PT Bangun Ranah Berkah
+        </div>
+        <a href="https://wa.me/62895811295050" target="_blank" style="background-color: var(--gold-accent); color: #030705; font-weight: 900; font-size: 13px; padding: 8px 20px; border-radius: 999px; text-decoration: none;">
+            Hire Me
+        </a>
+    </nav>
+
+    <!-- HERO NARASI -->
+    <section style="max-width: 56rem; margin: 9rem auto 2rem auto; padding: 0 1.5rem; box-sizing: border-box;">
+        <div style="display: inline-block; background-color: var(--card-surface); border: 1px solid var(--forest-base); color: var(--grass-vibrant); font-size: 11px; font-weight: 800; padding: 6px 16px; border-radius: 999px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5rem;">
+            Social Media Branding Study Case
+        </div>
+        <h1 style="font-size: 3.5rem; font-weight: 900; color: var(--text-pure-white); margin: 0 0 1rem 0; letter-spacing: -1px; line-height: 1.1;">
+            Maryam Residence.
+        </h1>
+        <p class="text-sage" style="font-size: 1.125rem; margin: 0 0 2.5rem 0; max-width: 42rem;">
+            Bagaimana merancang visual perumahan Islami yang terlihat <span class="text-vibrant">modern & premium</span>, tanpa kehilangan ketenangan serta kaidah syar'i-nya.
+        </p>
+
+        <!-- 3 KARTU STRATEGI -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem;">
+            <div class="iron-card">
+                <div style="color: var(--grass-vibrant); font-size: 12px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                    <span style="width: 8px; height: 8px; background-color: var(--gold-accent); border-radius: 50%;"></span> The Challenge
+                </div>
+                <div class="text-sage" style="font-size: 13px;">Menghindari desain syariah yang kaku atau 'berisik'. Visual harus langsung memicu rasa aman dan kepercayaan.</div>
+            </div>
+            <div class="iron-card">
+                <div style="color: var(--grass-vibrant); font-size: 12px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                    <span style="width: 8px; height: 8px; background-color: var(--gold-accent); border-radius: 50%;"></span> Visual Strategy
+                </div>
+                <div class="text-sage" style="font-size: 13px;">Menggunakan palet *Warm Earth-Tone* dipadu *white space* luas, menciptakan hierarki visual yang damai di HP.</div>
+            </div>
+            <div class="iron-card">
+                <div style="color: var(--grass-vibrant); font-size: 12px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
+                    <span style="width: 8px; height: 8px; background-color: var(--gold-accent); border-radius: 50%;"></span> Role & Tools
+                </div>
+                <div class="text-sage" style="font-size: 13px;">Graphic Designer Intern.<br><span style="color: var(--text-pure-white); font-weight: 700;">Adobe Photoshop, Illustrator, & Canva.</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================
+         PANGGUNG DESKTOP (3D ORBIT KURSOR) — Dijamin 100% Terbuka
+         ========================================================== -->
+    <section id="desktopOrbitSection">
+        <div class="center-anchor" onclick="window.open('https://www.instagram.com/maryamresidenceofficial', '_blank')">
+            <div class="center-circle">
+                <img src="./assets/maryam/logo-maryam.png" alt="Maryam Logo">
+            </div>
+            <span style="margin-top: 8px; background-color: var(--grass-vibrant); color: var(--bg-deep); font-size: 10px; font-weight: 900; padding: 2px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: 1px;">Pusat Klien</span>
+        </div>
+        <div id="desktopStage" style="position: absolute; inset: 0; pointer-events: none;"></div>
+        <p style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); width: 100%; text-align: center; color: #C2D6CB; font-size: 12px; pointer-events: none; z-index: 100;">
+    💡 Gerakkan mouse ke kiri/kanan untuk mengontrol putaran & klik kartu untuk membaca copywriting
+</p>
+    </section>
+
+    <!-- ==========================================================
+         PANGGUNG MOBILE (SWIPE HORIZONTAL)
+         ========================================================== -->
+    <section id="mobileSwipeSection">
+        <div style="background-color: var(--card-surface); border: 1px solid var(--forest-base); border-radius: 1.75rem; padding: 1rem; box-shadow: 0 10px 25px rgba(0,0,0,0.8);">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px; padding: 0 4px;">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background-color: var(--bg-deep); border: 1px solid var(--grass-vibrant); display: flex; align-items: center; justify-content: center; padding: 4px; shrink: 0;">
+                    <img src="./assets/maryam/logo-maryam.png" style="width: 100%; height: 100%; object-fit: contain;" alt="Logo">
+                </div>
+                <div>
+                    <div style="font-size: 12px; font-weight: 900; color: white;">Katalog Instagram</div>
+                    <div style="font-size: 10px; font-weight: 700; color: var(--grass-vibrant);">← Geser horizontal untuk 6 karya →</div>
+                </div>
+            </div>
+            <div id="mobileCardContainer" class="custom-scrollbar" style="display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px;"></div>
+        </div>
+    </section>
+
+    <!-- VIEWPORT KACA COPYWRITING -->
+    <section style="max-width: 56rem; margin: 0 auto 6rem auto; padding: 0 1.5rem; box-sizing: border-box;">
+        <div style="background-color: var(--card-surface); border: 2px solid var(--forest-base); border-radius: 2.5rem; padding: 2.5rem; box-shadow: 0 20px 50px rgba(0,0,0,0.9); display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: space-between;" id="captionBox">
+            
+            <div style="flex: 1 1 min-width: 260px; text-align: left;">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+                    <span id="capType" style="background-color: var(--grass-vibrant); color: var(--bg-deep); font-size: 11px; font-weight: 900; padding: 4px 12px; border-radius: 999px; letter-spacing: 1px;">FEED</span>
+                    <span style="color: var(--gold-accent); font-size: 12px; font-weight: 700;">Copywriting Asli</span>
+                </div>
+                <h3 id="capTitle" style="font-size: 1.75rem; font-weight: 900; color: white; margin: 0 0 1rem 0; line-height: 1.2;">Judul Postingan</h3>
+                <div style="width: 60px; height: 4px; background-color: var(--grass-vibrant); border-radius: 999px; margin-bottom: 1.5rem;"></div>
+                <a id="capLink" href="#" target="_blank" style="background-color: var(--forest-base); color: white; font-size: 13px; font-weight: 700; padding: 12px 24px; border-radius: 999px; text-decoration: none; border: 1px solid var(--grass-vibrant); display: inline-block;">
+                    Lihat Bukti Tayang di IG ↗
+                </a>
+            </div>
+
+            <!-- TEKS SAGE PUTIH KONTRAS TINGGI -->
+            <div style="flex: 1 1 min-width: 280px; background-color: var(--bg-deep); border: 1px solid var(--forest-base); border-radius: 1.75rem; padding: 1.5rem; height: 260px; overflow-y: auto;" class="custom-scrollbar text-left font-normal">
+                <p id="capText" style="color: #E2F1E8; font-size: 14px; line-height: 1.7; white-space: pre-line; margin: 0;">
+                    Klik salah satu karya di atas untuk membaca copywriting lengkapnya di sini.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MESIN JAVASCRIPT NATIVE -->
+    <script>
+        const maryamDatabase = [
+            {
+                id: 1, type: "FEED", img: "./assets/maryam/feed-1.webp",
+                url: "https://www.instagram.com/p/DHXrq6ezV8p/?img_index=1",
+                title: "✨ Testimoni Klien Maryam Residence ✨",
+                text: `Kepercayaan Anda adalah motivasi terbesar kami dalam menghadirkan hunian islami terbaik. Alhamdulillah, banyak yang telah merasakan manfaat dan keberkahan memiliki rumah di Maryam Residence. 🏡🌿\n\n💬 “Rumahnya nyaman, lokasi strategis, dan prosesnya mudah. Barakallah!”\n💬 “Hunian islami yang benar-benar sesuai harapan. Lingkungan syariah yang tenang dan berkah.”\n\nKami berkomitmen untuk terus memberikan pelayanan terbaik bagi keluarga muslim yang ingin memiliki rumah impian sesuai syariat. 🤲✨\n\n🏠 Ingin merasakan kenyamanan dan keberkahan di Maryam Residence? Yuk, konsultasikan sekarang!`
+            },
+            {
+                id: 2, type: "FEED", img: "./assets/maryam/feed-2.webp",
+                url: "https://www.instagram.com/p/DHm0y2lTqb0/?img_index=1",
+                title: "🌟 Kurma, Si Manis Penuh Manfaat! 🌟",
+                text: `Kurma bukan sekadar buah, tapi juga sumber energi alami yang kaya manfaat! 🍽️✨ Dari gula alami yang cepat diserap tubuh hingga kandungan serat yang membantu pencernaan, kurma adalah pilihan terbaik untuk berbuka puasa.\n\nMari jaga kesehatan dan nikmati manfaatnya di bulan suci ini! 🍀💛\n\n#MaryamResidence #HidupBerkah #ManfaatKurma #RamadhanSehat`
+            },
+            {
+                id: 3, type: "FEED", img: "./assets/maryam/feed-3.webp",
+                url: "https://www.instagram.com/p/DH1rWXUT5X1/",
+                title: "🌙 Ucapan Idul Fitri 1446 Hijriah",
+                text: `بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم\nالسلام عليكم ورحمةالله وبركاته\n\n🌙 Taqabballalahu minna wa minkum, Shiyaamana wa shiyamakum. Kullu’aam wa antum bi khair 🌙\n\nSegenap keluarga besar PT. Bangun Ranah Berkah mengucapkan:\n"Selamat Hari Raya IDUL FITRI 1 Syawal 1446 H"\n\nSemoga amal ibadah kita diterima oleh Allah SWT, kualitas iman & taqwa kita semakin meningkat dan kembali dipertemukan Ramadhan di tahun depan. Aamiin Yaa Rabbal'Aalamiin.\n\nوالسلام عليكم ورحمةالله وبركاته`
+            },
+            {
+                id: 4, type: "FEED", img: "./assets/maryam/feed-4.webp",
+                url: "https://www.instagram.com/p/DIstvYKzDAx/",
+                title: "🌿 Scandinavian Style: Nyaman Tetap Elegan!",
+                text: `Hunian 1 lantai dengan desain clean dan pencahayaan natural ala Scandinavian ✨\nCocok banget buat kamu yang ingin tinggal nyaman, tenang, dan tetap modern di lingkungan Islami ❤️\n\n💚 Lokasi strategis | 2 KT & 2 KM\n💚 Cicilan mulai 4 jutaan | Harga mulai 500 Jutaan\n\n🏡 Maryam Residence — tempat tinggal penuh keberkahan. Lingkungan Islami, suasana keluarga, dan investasi masa depan yang menenangkan jiwa.\n\n📞 Hubungi kami: +62 851 5816 0556`
+            },
+            {
+                id: 5, type: "REELS VIDEO", img: "./assets/maryam/reels-1.webp",
+                url: "https://www.instagram.com/p/DMUsX4vTyhl/",
+                title: "🎬 Promo Hemat Hingga 100 Juta!",
+                text: `"Beli Rumah Syariah, Hemat Hingga 100 Juta! 🏡✨"\n\nCari rumah impian tanpa riba, tanpa denda, dan sekarang diskon besar-besaran?\nDi Maryam Residence, kamu bisa wujudkan hunian halal impian keluarga dengan:\n\n💸 Diskon hingga 100 Juta\n🏷️ Harga mulai 280 jutaan untuk Type 36/67 (Unit Terbatas!)\n\nJangan tunda lagi, karena rumah syariah dengan harga hemat seperti ini cepat habis! Lokasi strategis di Setu, Bekasi. Udara masih sejuk dan lingkungan berkembang.\n\n📲 Hubungi kami sekarang: +62 851 5816 0556`
+            },
+            {
+                id: 6, type: "REELS VIDEO", img: "./assets/maryam/reels-2.webp",
+                url: "https://www.instagram.com/p/DLY65wJzkCo/",
+                title: "🎬 Selamat Tahun Baru Islam 1447 H",
+                text: `✨ Selamat Tahun Baru Islam 1447 Hijriah!\nSaatnya membuka lembaran baru dengan hati yang lebih taat, niat yang lebih lurus, dan langkah yang lebih berkah. 🌙\n\nTahun baru bukan sekadar angka, tapi tentang hijrah ke arah yang lebih baik. Untuk diri, keluarga, dan tempat tinggal kita. 🏡\n\nDi Maryam Residence, kami hadir bukan hanya menawarkan rumah, tapi hunian syariah yang menentramkan jiwa dan mengajak kita hidup lebih dekat pada nilai-nilai Islam.\n\n📿 “Hidup yang lebih berkah, dimulai dari rumah yang lebih berkah.”`
+            }
+        ];
+
+        // 1. SUNTIK MOBILE DENGAN INLINE STYLING MUTLAK
+        const mobContainer = document.getElementById('mobileCardContainer');
+        maryamDatabase.forEach(item => {
+            const isReels = item.type.includes("REELS");
+            const mCard = document.createElement('div');
+            
+            // PERUBAHAN RASIO: Mengatur rasio spesifik 3:4 untuk Feed dan 9:16 untuk Reels
+            mCard.style.flexShrink = '0'; mCard.style.scrollSnapAlign = 'center';
+            mCard.style.width = isReels ? '180px' : '210px'; 
+            mCard.style.height = isReels ? '320px' : '280px';
+            mCard.style.backgroundColor = '#08140F'; mCard.style.border = '1px solid #016539';
+            mCard.style.borderRadius = '1.5rem'; mCard.style.padding = '0.75rem';
+            mCard.style.display = 'flex'; mCard.style.flexDirection = 'column'; mCard.style.justifyContent = 'space-between';
+            mCard.style.boxShadow = '0 8px 20px rgba(0,0,0,0.6)'; mCard.style.cursor = 'pointer';
+            mCard.onclick = () => triggerDetail(item.id);
+
+            mCard.innerHTML = `
+                <div style="width: 100%; height: 80%; border-radius: 1rem; overflow: hidden; background: #030705;">
+                    <img src="${item.img}" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 6px;">
+                    <span style="font-size: 9px; font-weight: 900; background: #016539; color: white; padding: 2px 6px; border-radius: 4px;">${item.type}</span>
+                    <span style="font-size: 11px; font-weight: 700; color: #EFAE00;">Baca ↗</span>
+                </div>
+            `;
+            mobContainer.appendChild(mCard);
+        });
+
+        // 2. SUNTIK DESKTOP 3D DENGAN PENGAMAN W3C
+        const desktopStage = document.getElementById('desktopStage');
+        const domCards = [];
+
+        maryamDatabase.forEach((item) => {
+            const isReels = item.type.includes("REELS");
+            const card = document.createElement('div');
+            
+            // PERUBAHAN RASIO: Mengatur rasio spesifik 3:4 untuk Feed dan 9:16 untuk Reels
+            card.style.position = 'absolute'; card.style.left = '50%'; card.style.top = '50%';
+            card.style.width = isReels ? '200px' : '240px'; 
+            card.style.height = isReels ? '355px' : '320px';
+            card.style.backgroundColor = '#08140F'; card.style.border = '2px solid #016539';
+            card.style.borderRadius = '1.75rem'; card.style.overflow = 'hidden'; card.style.cursor = 'pointer';
+            card.style.boxShadow = '0 15px 35px rgba(0,0,0,0.8)'; card.style.pointerEvents = 'auto';
+            card.style.transition = 'border-color 0.3s ease';
+            
+            card.onmouseover = () => card.style.borderColor = '#8BC243';
+            card.onmouseout = () => card.style.borderColor = '#016539';
+            card.onclick = () => triggerDetail(item.id);
+
+            card.innerHTML = `
+                <img src="${item.img}" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+                <div style="position: absolute; inset: 0; background: linear-gradient(to top, #030705 10%, rgba(3,7,5,0.2) 60%, transparent); opacity: 0.9;"></div>
+                <div style="position: absolute; bottom: 1rem; left: 1rem; right: 1rem; display: flex; align-items: center; justify-content: space-between; z-index: 10;">
+                    <span style="background: #016539; color: white; font-size: 10px; font-weight: 900; padding: 3px 10px; border-radius: 999px; letter-spacing: 1px;">${item.type}</span>
+                    <span style="color: #EFAE00; font-size: 12px; font-weight: 700;">Baca ↗</span>
+                </div>
+            `;
+            desktopStage.appendChild(card);
+            domCards.push(card);
+        });
+
+        // MESIN KURSOR ORBIT MATEMATIS MURNI
+        const orbitSection = document.getElementById('desktopOrbitSection');
+        let currentAngle = 0;
+        let targetSpeed = 0.0025;
+        let currentSpeed = 0.0025;
+
+        orbitSection.addEventListener('mousemove', (e) => {
+            const rect = orbitSection.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const centerX = rect.width / 2;
+            targetSpeed = ((mouseX - centerX) / centerX) * 0.012; 
+        });
+        orbitSection.addEventListener('mouseleave', () => targetSpeed = 0.0025);
+
+        function animateDesktopOrbit() {
+            currentSpeed += (targetSpeed - currentSpeed) * 0.06;
+            currentAngle += currentSpeed;
+
+            const radiusX = 350; const radiusY = 90; const yOffset = 45;
+
+            domCards.forEach((card, index) => {
+                const angle = currentAngle + (index * ((Math.PI * 2) / domCards.length));
+                const x = Math.sin(angle) * radiusX;
+                const y = (Math.cos(angle) * radiusY) + yOffset;
+                const depth = (Math.cos(angle) + 1) / 2;
+
+                const scale = 0.68 + (depth * 0.32); 
+                const opacity = 0.35 + (depth * 0.65);
+                const zIndex = Math.round(depth * 100);
+
+                // PENENGAH MUTLAK: Menggunakan syntax W3C calc() yang didukung 100% browser
+                card.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) scale(${scale})`;
+                card.style.opacity = opacity;
+                card.style.zIndex = zIndex;
+            });
+            requestAnimationFrame(animateDesktopOrbit);
+        }
+        animateDesktopOrbit();
+
+        // FUNGSI SUNTIK CAPTION
+        function triggerDetail(id) {
+            const data = maryamDatabase.find(x => x.id === id);
+            if(!data) return;
+
+            const typeEl = document.getElementById('capType');
+            const titleEl = document.getElementById('capTitle');
+            const textEl = document.getElementById('capText');
+            const linkEl = document.getElementById('capLink');
+            const boxEl = document.getElementById('captionBox');
+
+            const isReels = data.type.includes("REELS");
+            typeEl.style.backgroundColor = isReels ? '#EFAE00' : '#8BC243';
+            typeEl.style.color = '#030705';
+            typeEl.innerText = data.type;
+
+            titleEl.innerText = data.title;
+            textEl.innerText = data.text;
+            linkEl.href = data.url;
+
+            boxEl.style.transform = 'scale(0.98)'; boxEl.style.borderColor = '#8BC243';
+            setTimeout(() => { boxEl.style.transform = 'scale(1)'; boxEl.style.borderColor = '#016539'; }, 150);
+
+            if(window.innerWidth < 768) boxEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        window.onload = () => setTimeout(() => triggerDetail(1), 100);
+    </script>
+</body>
+</html>
